@@ -3,45 +3,41 @@ from sorted_table_map import SortedTableMap
 class SortedTableMapClient(SortedTableMap):
     def main():
         map_instance = SortedTableMap()
-        print("Añadiendo elementos...")
         map_instance['a'] = 10
         map_instance['c'] = 30
         map_instance['b'] = 20
 
+        print("Prueba getItem de la clave: a ")
+        print(map_instance.__getitem__('a'))
+        #map_instance.__getitem__('d') #prueba excepcion
+
+        print(map_instance)
+
+        print(f"Por lo tanto tiene {map_instance.__len__()} elementos ")
+
+        print("Cambiando el valor de la clave a: 19")
+        map_instance.__setitem__('a', 19)
+        print(map_instance)
 
 
-        print("Contenido del mapa:", map_instance)
-        print("Actualizando el valor de la clave 'b' a 25")
-        map_instance['b'] = 25
-        print("Valor de la clave 'b':", map_instance['b'])  
-        try:
-            print("Valor de la clave 'd':", map_instance['d'])
-        except KeyError as e:
-            print(e) 
+        print("Agregando la clave 'd' ")
+        map_instance.__setitem__('d', 23)
+        print(map_instance)
 
+        print("Eliminando clave d")
+        map_instance.__delitem__('d')
+        print(map_instance)
 
+        print("Claves del map: ")
+        claves = map_instance.__iter__()
+        for clave in claves:
+            print(clave)
 
-
-        print("Eliminando la clave 'a'...")
-        del map_instance['a']
-        print("Contenido del mapa tras la eliminación de 'a':", map_instance)
-        try:
-            print("Valor de la clave 'a':", map_instance['a']) 
-        except KeyError as e:
-            print(e)
-
-
-
-        print("Iterando sobre las claves del mapa:")
-        for key in map_instance:
-            print(key)
-
-
-
-        print("Iterando sobre los ítems del mapa:")
-        for item in map_instance.iter_items():
+        print("Items del map: ")
+        items = map_instance.iter_items()
+        for item in items:
             print(item)
-        
+
 
     if __name__ == "__main__":
         main()

@@ -2,11 +2,6 @@ from typing import Any, Generator, List, Tuple
 from sorted_table_map_abstract import SortedTableMapAbstract
 
 class SortedTableMap(SortedTableMapAbstract):
-
-    def __init__(self) -> None:
-        super().__init__()
-
-
     def __len__(self) -> int:
         return len(self._table)
     
