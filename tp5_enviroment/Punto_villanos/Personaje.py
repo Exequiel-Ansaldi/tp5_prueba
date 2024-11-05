@@ -32,7 +32,7 @@ class Personaje():
     
     @staticmethod
     def contar_superheroes_y_villanos():
-        archivo = 'c:\\Users\\GAMER\\tp5_2\\tp5_prueba\\tp5_enviroment\\src\\Punto_villanos\\superheroes_villanos.txt'
+        archivo = 'c:\\Users\\GAMER\\tp5_2\\tp5_prueba\\tp5_enviroment\\Punto_villanos\\superheroes_villanos.txt'
         mapa = ProbeHashMap()
 
         mapa["superheroe"] = 0

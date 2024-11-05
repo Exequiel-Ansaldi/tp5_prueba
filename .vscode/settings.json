@@ -1,6 +1,7 @@
 {
     "python.analysis.extraPaths": [
         "./tp5_enviroment/src/Punto_map",
-        "./tp5_enviroment/src/Punto_villanos"
+        "./tp5_enviroment/src/Punto_villanos",
+        "./tp5_enviroment/Punto_villanos"
     ]
 }
