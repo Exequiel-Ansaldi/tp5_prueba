@@ -6,7 +6,6 @@ class Personaje():
     def __init__(self, nombre, bando):
         self.nombre = nombre
         self.bando = bando
-        self.mapa = ProbeHashMap()
 
     def __repr__(self):
         return f"{self.bando}: {self.nombre}"
