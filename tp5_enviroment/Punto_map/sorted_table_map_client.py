@@ -1,4 +1,4 @@
-from sorted_table_map import SortedTableMap
+from Punto_map.sorted_table_map import SortedTableMap
 
 class SortedTableMapClient(SortedTableMap):
     def main():
