@@ -2,7 +2,7 @@ from Personaje import Personaje
 class Ejecutable:
     @staticmethod
     def main():
-        archivo = 'c:\\Users\\GAMER\\tp5_2\\tp5_prueba\\tp5_enviroment\\Punto_villanos\\superheroes_villanos.txt'
+        archivo = 'superheroes_villanos.txt'
         lineas = Personaje.leer_archivo(archivo)
         personajes = Personaje.clasificar_personajes(lineas)
         for personaje in personajes:
